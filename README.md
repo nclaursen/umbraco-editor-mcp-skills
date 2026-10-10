@@ -1,9 +1,10 @@
 # Umbraco Editor MCP Skills
 
-Eight reusable AI skills and seven editable knowledge templates for working
-with Umbraco CMS Editor MCP: content, SEO, analytics and component-based page
-drafting. Built from Niels' experience working with site content and Umbraco,
-with the site-specific rules removed.
+Twelve reusable AI skills and eight editable knowledge templates for working
+with Umbraco CMS Editor MCP: content, SEO, analytics, page drafting, internal
+links, maintenance, localisation and campaign briefs. Built from Niels'
+experience working with site content and Umbraco, with the site-specific
+rules removed.
 
 Use the skills with the files and tools available in your assistant client.
 Tailor the knowledge to your own audience, voice, facts and website.
@@ -37,6 +38,10 @@ Keep your company's facts and raw analytics out of this public repository.
 | editorial-revision | Draft an accepted revision using the chosen voice |
 | page-block-drafting | Learn actual components and write copy for them |
 | content-qa | Review the draft, sources, links, headings, alt text, metadata and rendering |
+| internal-link-review | Suggest useful connections with verified destinations and anchors |
+| content-maintenance | Review stale facts, expired content, overlap and ownership gaps |
+| localisation-review | Compare language variants using approved market terminology |
+| campaign-page-brief | Map audience, offer, proof and action to a page brief and available blocks |
 
 Use only the skills relevant to the task. These names are pack-local and may
 overlap with existing skills; resolve that before installing or renaming.
@@ -45,6 +50,7 @@ overlap with existing skills; resolve that before installing or renaming.
 
 Edit knowledge/voice.md, audience.md, approved-facts.md and business-goals.md.
 For data work add measurement.md; for page planning add content-map.md.
+For localisation add terminology.md with approved market rules and terms.
 Learn the actual components before relying on page-blocks.md. The unanswered
 questions are intentional template prompts, not facts the assistant may fill
 in without evidence. Supply your own approved copy and facts, not Niels' or
@@ -55,11 +61,11 @@ and installation differ by client; this pack does not claim that placing
 these folders anywhere makes them active. You can start by supplying the
 relevant SKILL.md and knowledge files explicitly in an authorized workspace.
 
-## Example: learn blocks with Claude
+## Example: learn blocks with your assistant
 
 Provide reference pages of one page type, schema or content-model exports,
 and rendered previews where possible. If a read-only CMS connection is
-available and authorized, Claude can use its exposed read tools instead.
+available and authorized, your assistant can use its exposed read tools instead.
 This prompt does not assume a particular MCP's tool names or capabilities:
 
 For Umbraco, the supported sequence and limits are documented in
@@ -106,11 +112,39 @@ Use seo-audit or aeo-audit when their specific checks are needed. Use
 seo-strategy when deciding priorities across pages rather than improving
 one passage. No step automatically authorizes CMS edits or publication.
 
+## Examples: recurring editorial work
+
+> Use internal-link-review on these three published pages and our content map.
+> Suggest links only where the destination helps answer the reader's next
+> question. Return the source passage, destination, anchor and verification
+> status. Do not edit the CMS.
+
+> Use content-maintenance on this campaign section as of the supplied review
+> date. Return keep, update, investigate, merge or archive candidates with
+> sources and known owners. Do not treat missing analytics as zero demand.
+> Do not unpublish, delete or change URLs.
+
+> Use localisation-review to compare these approved source and target pages
+> with terminology.md. Flag changed meaning, missing qualifications and
+> unsuitable local links. Preserve documented market adaptations and return
+> proposed corrections without changing any CMS variant.
+
+> Use campaign-page-brief with this offer, audience and goal. Check whether an
+> existing page can serve the campaign, then map the needed content to our
+> reviewed blocks. List missing evidence, assets and tracking dependencies.
+> Return a brief for review; do not create or publish a page.
+
+These tasks can use saved pages and exports as well as available CMS tools.
+Search or analytics connections are optional unless the question requires
+that evidence. Available tools depend on permissions and the site build.
+
 ## Verify behavior
 
 Try the pack on known examples, including a page needing no change, missing
 page/query attribution, a zero denominator, an unsupported product claim,
-and a schema with an unknown field limit. Inspect the output and correct the
+a schema with an unknown field limit, an apparently expired page with a
+historical role, a local variant with intentional differences, and a link
+target that exists only as a draft. Inspect the output and correct the
 relevant knowledge or instruction. Frontmatter validation alone does not
 prove these decisions work.
 
