@@ -1,8 +1,9 @@
-# Content Workflow Skills
+# Umbraco Editor MCP Skills
 
-Eight reusable AI skills and seven editable knowledge templates for content,
-SEO, analytics and component-based page drafting. Built from Niels' experience
-working with site content and Umbraco, with the site-specific rules removed.
+Eight reusable AI skills and seven editable knowledge templates for working
+with Umbraco CMS Editor MCP: content, SEO, analytics and component-based page
+drafting. Built from Niels' experience working with site content and Umbraco,
+with the site-specific rules removed.
 
 Use the skills with the files and tools available in your assistant client.
 Tailor the knowledge to your own audience, voice, facts and website.
