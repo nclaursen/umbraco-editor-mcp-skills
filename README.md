@@ -10,13 +10,6 @@ Use the skills with the files and tools available in your assistant client.
 Tailor the knowledge to your own audience, voice, facts and website.
 CMS operations depend on permissions and the individual site build.
 
-## Illustrated workflow
-
-![Illustrated assistant workflow showing site knowledge, Page Evidence or CSV exports, Umbraco content and a proposed title change followed by QA.](examples/editor-workflow.gif)
-
-An illustration using a public enterprise-page title example, not a recorded
-assistant session or a claim of improved performance.
-
 ## Quick start
 
 1. Download this repository and inspect the relevant SKILL.md files.
