@@ -36,7 +36,7 @@ Keep your company's facts and raw analytics out of this public repository.
 | seo-strategy | Prioritise coverage and improvements around business goals |
 | editorial-revision | Draft an accepted revision using the chosen voice |
 | page-block-drafting | Learn actual components and write copy for them |
-| content-qa | Review the complete draft against the brief and evidence |
+| content-qa | Review the draft, sources, links, headings, alt text, metadata and rendering |
 
 Use only the skills relevant to the task. These names are pack-local and may
 overlap with existing skills; resolve that before installing or renaming.
