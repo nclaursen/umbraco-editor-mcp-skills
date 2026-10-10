@@ -1,0 +1,12 @@
+# Keep working data and credentials out of the public starter repository.
+.DS_Store
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+__pycache__/
+local/
+inputs/
+outputs/
+node_modules/
