@@ -1,153 +1,178 @@
 # Umbraco Editor MCP Skills
 
-Twelve reusable AI skills and eight editable knowledge templates for working
-with Umbraco CMS Editor MCP: content, SEO, analytics, page drafting, internal
-links, maintenance, localisation and campaign briefs. Built from Niels'
-experience working with site content and Umbraco, with the site-specific
-rules removed.
+Twelve reusable AI skills and eight editable knowledge templates for content
+work with Umbraco CMS Editor MCP. This is Niels' independent community pack,
+not an official Umbraco distribution. It uses plain skill folders: no plugin
+or marketplace setup is required.
 
-Use the skills with the files and tools available in your assistant client.
-Tailor the knowledge to your own audience, voice, facts and website.
-CMS operations depend on permissions and the individual site build.
+The CMS-facing skills combine editorial judgement with task-specific Editor
+MCP references. Three companion skills use supplied search/analytics evidence
+and business context. You can also work from saved pages and exports; state
+which live checks are unavailable. CMS operations depend on permissions,
+enabled tools and the individual site build.
 
 ## Quick start
 
-1. Download this repository and inspect the relevant SKILL.md files.
-2. Create your own working folder outside the public repository for data,
-   tailored knowledge and outputs. Copy the knowledge templates there.
-3. Fill in the context needed for one task, such as voice, audience and
-   measurement definitions for a page refresh.
-4. Tell your assistant to read the chosen skill file and point it to your
-   working folder. Use the examples below for a first run.
-5. Review the result, improve the instructions or knowledge and repeat.
+1. Download this repository and read the relevant `SKILL.md`.
+2. Create a working folder outside the public repository for your data,
+   tailored knowledge and outputs. Copy the needed `knowledge/` templates.
+3. Fill in the context for one task: audience, voice, approved facts and goal.
+4. Tell your assistant to read the skill and point it to your working folder.
+   For CMS work, connect your Editor MCP through your client's supported setup.
+5. Start with one of the workflows below and inspect the result.
 
-The explicit-file approach does not rely on automatic discovery. If you
-install skills into your client's skill directory, follow that client's
-current instructions and check for collisions with existing skill names.
-Keep your company's facts and raw analytics out of this public repository.
+Supplying the files explicitly does not rely on automatic skill discovery.
+If installing into your client's skill directory, follow that client's
+instructions and check for naming collisions. Install the complete skill
+folder, including `references/`. Skills do not install or configure the MCP.
+Keep company facts and raw analytics out of this public repository.
 
 ## Skills
 
+### CMS-facing skills
+
 | Skill | Use it for |
 | --- | --- |
-| gsc-content-review | Compare page-specific queries with actual content |
-| analytics-page-review | Analyse acquisition, engagement and outcomes |
-| seo-audit | Inspect content and supported technical search checks |
-| aeo-audit | Review answer quality, evidence and retrieval usability |
-| seo-strategy | Prioritise coverage and improvements around business goals |
-| editorial-revision | Draft an accepted revision using the chosen voice |
-| page-block-drafting | Learn actual components and write copy for them |
-| content-qa | Review the draft, sources, links, headings, alt text, metadata and rendering |
-| internal-link-review | Suggest useful connections with verified destinations and anchors |
-| content-maintenance | Review stale facts, expired content, overlap and ownership gaps |
-| localisation-review | Compare language variants using approved market terminology |
-| campaign-page-brief | Map audience, offer, proof and action to a page brief and available blocks |
+| [umbraco-page-drafting](skills/umbraco-page-drafting/SKILL.md) | Learn actual blocks, map a brief and create a requested unpublished page |
+| [umbraco-seo-audit](skills/umbraco-seo-audit/SKILL.md) | Review intent, metadata and supported technical search checks |
+| [umbraco-aeo-audit](skills/umbraco-aeo-audit/SKILL.md) | Review answer quality, evidence and retrieval usability |
+| [umbraco-content-qa](skills/umbraco-content-qa/SKILL.md) | Check a complete draft, links, metadata, media and rendering |
+| [umbraco-localisation-review](skills/umbraco-localisation-review/SKILL.md) | Find missing variants, compare translations or draft a requested variant |
+| [umbraco-internal-link-review](skills/umbraco-internal-link-review/SKILL.md) | Suggest useful links with verified destinations and anchors |
+| [umbraco-content-maintenance](skills/umbraco-content-maintenance/SKILL.md) | Review stale facts, expired content, overlap and ownership gaps |
+| [umbraco-editorial-revision](skills/umbraco-editorial-revision/SKILL.md) | Implement an accepted change brief locally or in a requested CMS draft |
+| [umbraco-campaign-page-brief](skills/umbraco-campaign-page-brief/SKILL.md) | Plan audience, offer, proof and action against available blocks |
 
-Use only the skills relevant to the task. These names are pack-local and may
-overlap with existing skills; resolve that before installing or renaming.
+Each has a conditional `references/umbraco-editor-mcp.md` with tool sequences
+and limits. Read it when using Editor MCP, not for a files-only task.
 
-## Tailor the knowledge first
+### Companion skills
 
-Edit knowledge/voice.md, audience.md, approved-facts.md and business-goals.md.
-For data work add measurement.md; for page planning add content-map.md.
-For localisation add terminology.md with approved market rules and terms.
-Learn the actual components before relying on page-blocks.md. The unanswered
-questions are intentional template prompts, not facts the assistant may fill
-in without evidence. Supply your own approved copy and facts, not Niels' or
-Umbraco's brand context.
+| Skill | Use it for |
+| --- | --- |
+| [gsc-content-review](skills/gsc-content-review/SKILL.md) | Compare page-specific GSC queries with actual content |
+| [analytics-page-review](skills/analytics-page-review/SKILL.md) | Analyse exported acquisition, engagement and outcomes |
+| [seo-strategy](skills/seo-strategy/SKILL.md) | Prioritise coverage and improvements around business goals |
 
-Tell the assistant where the knowledge files live. Automatic skill discovery
-and installation differ by client; this pack does not claim that placing
-these folders anywhere makes them active. You can start by supplying the
-relevant SKILL.md and knowledge files explicitly in an authorized workspace.
+The Editor MCP does not supply GSC or analytics metrics. Supply exports or
+another authorized source. Strategy can use CMS content inventories, but
+its priorities require business context and whatever supporting evidence is
+available. These skills remain part of the pack; use only what the task needs.
 
-## Example: learn blocks with your assistant
+## Tailor the knowledge
 
-Provide reference pages of one page type, schema or content-model exports,
-and rendered previews where possible. If a read-only CMS connection is
-available and authorized, your assistant can use its exposed read tools instead.
-This prompt does not assume a particular MCP's tool names or capabilities:
+Start with `knowledge/voice.md`, `audience.md`, `approved-facts.md` and
+`business-goals.md`. Add `measurement.md` for data work, `content-map.md` for
+page planning and `terminology.md` for localisation. Learn the actual site
+components before treating `page-blocks.md` as a catalogue.
 
-For Umbraco, the supported sequence and limits are documented in
-[the editor MCP adapter](skills/page-block-drafting/references/umbraco-editor-mcp.md).
-The editor MCP supports reading pages, inspecting blocks and properties,
-and creating or updating drafts. Available details depend on permissions
-and the individual site build.
+Knowledge templates hold your site's context; skill references explain tool
+workflows. Keep them separate. Unanswered template prompts are unknowns,
+not permission to invent facts. Tell the assistant where your tailored files
+live; no automatic loading of that folder is assumed.
 
-> Read skills/page-block-drafting/SKILL.md. Analyse the supplied reference
-> pages and schemas without editing the CMS. Build knowledge/page-blocks.md
-> for this site: actual block names and aliases, fields, constraints, allowed
-> structures, media needs, rendered headings where verified, and when each
-> block fits the content. Keep schema rules, editorial decisions and observed
-> patterns separate. Cite sources and list unknowns. Distinguish page-level
-> properties from blocks. Do not copy another site's limits or infer that
-> every block on an old page is approved for new pages.
+## Featured workflow: brief to unpublished page
 
-Review the catalogue before using its findings as house rules. Then:
+First learn the model from a small representative set of pages:
 
-> Use page-block-drafting with the reviewed catalogue, audience, approved
-> facts and voice files. Draft the requested page from the supplied brief.
-> First map each content unit to an available block and explain the choice.
-> Write field by field and check verified constraints. Use only supported
-> claims; list missing assets and unresolved constraints. Return the mapped
-> draft and run content-qa against the brief. Do not save to the CMS or publish.
+> Read skills/umbraco-page-drafting/SKILL.md and its Editor MCP reference.
+> Inspect these reference pages and their page types without editing the CMS.
+> Build knowledge/page-blocks.md in my working folder with actual aliases,
+> fields, constraints, allowed structures and media needs. Separate verified
+> schema rules from observed patterns and editorial choices. Cite sources
+> and mark unknowns; do not infer rendered headings from block names.
 
-The assistant can make routine component choices within the brief once it
-has reliable site knowledge. It should expose uncertainty when the model
-or brief does not support a choice rather than invent a component.
+Review the catalogue, then request the desired deliverable explicitly:
 
-## Example: evidence to revision
+> Use umbraco-page-drafting with this brief and my reviewed site knowledge.
+> Create an unpublished CMS draft under [parent ID], using [page type] in
+> [culture]. Map the content to verified fields and blocks, then save it.
+> Read back the fields and blocks and use umbraco-content-qa to check the
+> complete draft. Return the page ID, saved changes and unresolved checks.
+> Do not publish or schedule it.
 
-> Read gsc-content-review and analytics-page-review. Analyse the supplied
-> page-specific GSC exports and analytics export using knowledge/measurement.md.
-> Inspect the full current page and audience context. Return observations,
-> hypotheses and a small proposed edit with evidence. Do not edit content.
+For copy only, ask for the mapped draft without a CMS save. Draft creation
+includes the necessary draft writes when requested; it does not require a
+new confirmation for every tool call. Unknown model constraints still need
+resolution before relying on them. Rendered QA needs a real preview.
 
-After accepting the brief:
+## Featured workflow: section content health
 
-> Use editorial-revision with this accepted brief and our voice and approved
-> facts. Save the proposed copy locally, then use content-qa to review it.
+> Use umbraco-seo-audit and umbraco-aeo-audit on [section/parent ID] in
+> [culture]. Inspect a bounded set of pages and state coverage and versions.
+> Return one prioritised list of evidenced issues with exact fields/passages,
+> proposed fixes and unavailable checks. Include no change where appropriate.
+> Do not edit the CMS.
 
-Use seo-audit or aeo-audit when their specific checks are needed. Use
-seo-strategy when deciding priorities across pages rather than improving
-one passage. No step automatically authorizes CMS edits or publication.
+The two audits remain separately usable. `audit-page-seo` and
+`audit-page-content` support inspection; they are not a full crawl or an AI
+visibility measurement. Tree depth alone is not a navigation defect.
 
-## Examples: recurring editorial work
+If you want fixes saved, follow with:
 
-> Use internal-link-review on these three published pages and our content map.
-> Suggest links only where the destination helps answer the reader's next
-> question. Return the source passage, destination, anchor and verification
-> status. Do not edit the CMS.
+> Save these accepted metadata changes as drafts on these page IDs. Preserve
+> unrelated fields, cultures and existing draft changes. Read back each edit
+> and report old/new values and partial failures. Do not publish.
 
-> Use content-maintenance on this campaign section as of the supplied review
-> date. Return keep, update, investigate, merge or archive candidates with
-> sources and known owners. Do not treat missing analytics as zero demand.
-> Do not unpublish, delete or change URLs.
+`bulk-set-property` applies the same value to every selected page (up to 10
+per call). Distinct titles/descriptions need individual updates.
 
-> Use localisation-review to compare these approved source and target pages
-> with terminology.md. Flag changed meaning, missing qualifications and
-> unsuitable local links. Preserve documented market adaptations and return
-> proposed corrections without changing any CMS variant.
+## Featured workflow: localisation
 
-> Use campaign-page-brief with this offer, audience and goal. Check whether an
-> existing page can serve the campaign, then map the needed content to our
-> reviewed blocks. List missing evidence, assets and tracking dependencies.
-> Return a brief for review; do not create or publish a page.
+> Use umbraco-localisation-review and my terminology.md. Find missing [target
+> culture] variants under [parent ID], then compare these existing source and
+> target variants. Preserve supported market adaptations. Return missing
+> variants and proposed corrections without changing the CMS.
 
-These tasks can use saved pages and exports as well as available CMS tools.
-Search or analytics connections are optional unless the question requires
-that evidence. Available tools depend on permissions and the site build.
+For a selected missing variant:
 
-## Verify behavior
+> Draft the [target culture] version of [page ID] from the approved [source
+> culture] version and save it as an unpublished variant. Verify terminology,
+> claims, metadata and local links. Preserve source and invariant fields.
+> Report saved changes and anything requiring a language reviewer.
 
-Try the pack on known examples, including a page needing no change, missing
-page/query attribution, a zero denominator, an unsupported product claim,
-a schema with an unknown field limit, an apparently expired page with a
-historical role, a local variant with intentional differences, and a link
-target that exists only as a draft. Inspect the output and correct the
-relevant knowledge or instruction. Frontmatter validation alone does not
-prove these decisions work.
+`copy-variant` copies rather than translates and overwrites target content.
+Inspect the target first; replacing existing target work needs explicit
+authorization for that overwrite. Do not create site languages or alter
+fallback settings as part of translation work.
+
+## Other editorial work
+
+Use `gsc-content-review` and `analytics-page-review` with supplied exports to
+form an evidenced change brief, then `umbraco-editorial-revision` and
+`umbraco-content-qa` for the requested revision. Keep query and analytics
+metrics in their own scopes.
+
+Use `umbraco-internal-link-review` for useful connections and
+`umbraco-content-maintenance` for keep/update/investigate/merge/archive
+candidates. A reference report alone does not prove a page is orphaned or
+safe to remove. Use `umbraco-campaign-page-brief` before drafting a campaign
+page; planning does not create pages, forms or tracking.
+
+Review requests are read-only. Requested CMS edits use draft operations and
+read-back verification; they do not authorize publication, scheduling,
+deletion, URL changes or edits outside the task. Preserve existing work and
+report partial completion instead of claiming multi-call atomicity.
+
+## Compatibility, migration and verification
+
+The nine CMS-facing skills now have `umbraco-` prefixes. `page-block-drafting`
+became `umbraco-page-drafting`; the other eight retain their previous names
+with the prefix added. Update saved prompts and installations, remove the
+old installed copies, and retain your private knowledge files. The three
+companion skill names are unchanged.
+
+Tool references were checked against the
+[official Editor MCP tools](https://docs.umbraco.com/umbraco-in-ai/mcp/mcp-servers/cms-editor-mcp/available-tools.md)
+on November 9, 2026. This is documentation verification, not a live integration
+test or a claim of compatibility with every CMS/client version. Use the
+current session's registered schemas; consult current documentation when
+capabilities differ. This pack has its own changes rather than a version
+number tied to an Umbraco major.
+
+See [TESTING.md](TESTING.md) for reproducible behaviour scenarios and the
+verification record, and [CHANGELOG.md](CHANGELOG.md) for pack changes.
 
 ## License
 
-MIT, matching Page Evidence. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).

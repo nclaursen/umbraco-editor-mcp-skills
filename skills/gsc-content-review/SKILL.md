@@ -1,6 +1,6 @@
 ---
 name: gsc-content-review
-description: Compare page-specific GSC CSV evidence with existing content and propose justified editorial improvements.
+description: Compare page-specific GSC CSV evidence with existing content and propose justified editorial improvements. Use when supplied GSC exports can be tied to the page being reviewed; the Editor MCP does not supply GSC metrics.
 ---
 
 Read the supplied exports, period notes, audience brief and complete page.

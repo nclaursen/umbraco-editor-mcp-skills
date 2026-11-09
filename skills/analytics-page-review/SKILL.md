@@ -1,6 +1,6 @@
 ---
 name: analytics-page-review
-description: Analyse exported page analytics to identify measured changes in acquisition, engagement and outcomes, with explicit metric definitions and limits.
+description: Analyse exported page analytics to identify measured changes in acquisition, engagement and outcomes, with explicit metric definitions and limits. Use when interpreting supplied page analytics exports; the Editor MCP does not supply analytics metrics.
 ---
 
 Read the export and its measurement context. Identify provider, periods,

@@ -1,12 +1,14 @@
 ---
-name: page-block-drafting
-description: Learn a site's actual page blocks from reference pages and schemas, then draft content mapped to verified components.
+name: umbraco-page-drafting
+description: Learn a site's actual page blocks from reference pages and schemas, then draft content mapped to verified components. Use when learning a site's components, drafting a page from a brief, or creating an unpublished CMS draft.
 ---
 
 Use two modes as needed: learn the site's blocks or draft using an existing
 catalogue. Locate the supplied knowledge/page-blocks.md, reference pages,
 schema exports and brief. Read only the context relevant to the target page
-type. This skill does not assume any CMS or live connection.
+type. With files only, return mapped copy. With Editor MCP, a request to create
+an unpublished CMS page also includes the required draft writes; a copy-only
+request does not. Never publish in this workflow.
 
 When using Umbraco CMS Editor MCP, read
 [references/umbraco-editor-mcp.md](references/umbraco-editor-mcp.md) for the
@@ -53,8 +55,8 @@ the rendered evidence, required fields, lengths, nesting and media needs.
 Keep illustrative layouts separate from executable CMS payloads. Unknown
 schema prevents a claim of payload validity; provide a content map instead.
 
-Return the mapped draft, sources, checks and unresolved constraints. This
-does not authorize schema changes, CMS writes or publishing. If a save is
-separately authorized, use the exposed tools, preserve the original values,
+Return the mapped draft, sources, checks and unresolved constraints. Do not
+change schemas or publish. If a CMS save is requested, use the exposed tools,
+preserve the original values,
 re-read for concurrent edits and verify the saved result. Never report an
 unperformed preview, backup or save as completed.

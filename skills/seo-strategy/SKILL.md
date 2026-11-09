@@ -1,6 +1,6 @@
 ---
 name: seo-strategy
-description: Build an evidence-backed search content strategy from business goals, audience needs, existing pages and available search or analytics data.
+description: Build an evidence-backed search content strategy from business goals, audience needs, existing pages and available search or analytics data. Use when prioritising search content across pages using business goals and available evidence, rather than auditing one page.
 ---
 
 Read the audience, business-goals, content-map and measurement knowledge

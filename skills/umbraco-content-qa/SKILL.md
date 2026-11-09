@@ -1,7 +1,12 @@
 ---
-name: content-qa
-description: Review complete page drafts for editorial quality and publication hygiene including links, heading structure, image alt text, metadata and component constraints.
+name: umbraco-content-qa
+description: Review complete page drafts for editorial quality and publication hygiene including links, heading structure, image alt text, metadata and component constraints. Use when checking a complete Umbraco page draft against its brief before handoff or publication.
 ---
+
+When using Umbraco CMS Editor MCP, read
+[references/umbraco-editor-mcp.md](references/umbraco-editor-mcp.md) for this
+workflow's tool sequence and limits. With supplied files only, use the
+editorial workflow below and state which CMS checks are unavailable.
 
 Infer review-only, fix or final-verification mode from the user request.
 Review-only does not authorize editing. Read the complete draft, accepted

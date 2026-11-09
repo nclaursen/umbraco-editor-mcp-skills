@@ -1,7 +1,7 @@
 # Editable page-block catalogue
 
 This starts empty. Populate it from this site's actual schemas, exports,
-rendered pages and editorial decisions using page-block-drafting.
+rendered pages and editorial decisions using umbraco-page-drafting.
 Do not import another site's aliases, limits or component approval rules.
 
 ## Survey scope

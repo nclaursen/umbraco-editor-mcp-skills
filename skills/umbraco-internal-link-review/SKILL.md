@@ -1,7 +1,12 @@
 ---
-name: internal-link-review
-description: Review selected pages for useful internal links, checking destination relevance, anchors and existing connections before proposing changes.
+name: umbraco-internal-link-review
+description: Review selected pages for useful internal links, checking destination relevance, anchors and existing connections before proposing changes. Use when reviewing useful internal connections and verifying destinations on selected Umbraco pages.
 ---
+
+When using Umbraco CMS Editor MCP, read
+[references/umbraco-editor-mcp.md](references/umbraco-editor-mcp.md) for this
+workflow's tool sequence and limits. With supplied files only, use the
+editorial workflow below and state which CMS checks are unavailable.
 
 Read the selected source pages, content-map.md and audience context. Define the
 reviewed section, languages and published/draft scope from the request. Use

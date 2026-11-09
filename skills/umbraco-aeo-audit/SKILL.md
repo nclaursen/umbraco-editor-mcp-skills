@@ -1,7 +1,12 @@
 ---
-name: aeo-audit
-description: Review existing content for clear, supported answers and retrieval usability without promising answer-engine citations or visibility.
+name: umbraco-aeo-audit
+description: Review existing content for clear, supported answers and retrieval usability without promising answer-engine citations or visibility. Use when checking whether a page answers reader questions clearly and supports its claims; not for measuring AI visibility.
 ---
+
+When using Umbraco CMS Editor MCP, read
+[references/umbraco-editor-mcp.md](references/umbraco-editor-mcp.md) for this
+workflow's tool sequence and limits. With supplied files only, use the
+editorial workflow below and state which CMS checks are unavailable.
 
 Read the complete page and the relevant audience, approved-facts and voice
 knowledge. Establish the specific questions the page should help its readers

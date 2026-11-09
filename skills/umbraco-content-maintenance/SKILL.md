@@ -1,7 +1,12 @@
 ---
-name: content-maintenance
-description: Review a defined content section for stale facts, expired material and overlapping answers, returning evidence-backed maintenance decisions and ownership gaps.
+name: umbraco-content-maintenance
+description: Review a defined content section for stale facts, expired material and overlapping answers, returning evidence-backed maintenance decisions and ownership gaps. Use when reviewing an Umbraco section for stale facts, expired campaigns, overlap or archive candidates.
 ---
+
+When using Umbraco CMS Editor MCP, read
+[references/umbraco-editor-mcp.md](references/umbraco-editor-mcp.md) for this
+workflow's tool sequence and limits. With supplied files only, use the
+editorial workflow below and state which CMS checks are unavailable.
 
 Read the selected pages and relevant content-map.md, approved-facts.md and
 business-goals.md. Establish the review date, section, language and scope.

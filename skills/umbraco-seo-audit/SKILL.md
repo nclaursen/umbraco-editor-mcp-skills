@@ -1,7 +1,12 @@
 ---
-name: seo-audit
-description: Audit an existing page or bounded set of pages for search intent, content and technical SEO issues using supplied content and available evidence.
+name: umbraco-seo-audit
+description: Audit an existing page or bounded set of pages for search intent, content and technical SEO issues using supplied content and available evidence. Use when reviewing search intent, metadata or supported technical SEO checks for selected Umbraco pages.
 ---
+
+When using Umbraco CMS Editor MCP, read
+[references/umbraco-editor-mcp.md](references/umbraco-editor-mcp.md) for this
+workflow's tool sequence and limits. With supplied files only, use the
+editorial workflow below and state which CMS checks are unavailable.
 
 Establish the target pages, reader, purpose and audit scope. Read the complete
 content and relevant files in the starter pack's knowledge folder. Use the

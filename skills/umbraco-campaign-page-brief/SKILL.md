@@ -1,7 +1,12 @@
 ---
-name: campaign-page-brief
-description: Turn an audience, campaign offer and goal into an evidence-backed page brief mapped to the site's available components before drafting.
+name: umbraco-campaign-page-brief
+description: Turn an audience, campaign offer and goal into an evidence-backed page brief mapped to the site's available components before drafting. Use when planning a campaign page's audience, offer, proof, action and component mapping before drafting.
 ---
+
+When using Umbraco CMS Editor MCP, read
+[references/umbraco-editor-mcp.md](references/umbraco-editor-mcp.md) for this
+workflow's tool sequence and limits. With supplied files only, use the
+editorial workflow below and state which CMS checks are unavailable.
 
 Read the campaign inputs and relevant audience.md, business-goals.md,
 approved-facts.md, voice.md, content-map.md and reviewed page-blocks.md.

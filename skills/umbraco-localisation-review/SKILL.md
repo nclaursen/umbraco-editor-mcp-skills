@@ -1,15 +1,26 @@
 ---
-name: localisation-review
-description: Compare source and target language pages for meaning, completeness, terminology, local links and actions using approved market guidance.
+name: umbraco-localisation-review
+description: Review or draft language variants for meaning, completeness, terminology, local links and actions using approved market guidance. Use when comparing language variants, finding missing variants or drafting a requested translation in Umbraco.
 ---
 
-Read the source and target variants, audience.md, voice.md, approved-facts.md
-and terminology.md when supplied. Establish which language is the approved
+When using Umbraco CMS Editor MCP, read
+[references/umbraco-editor-mcp.md](references/umbraco-editor-mcp.md) for this
+workflow's tool sequence and limits. With supplied files only, use the
+editorial workflow below and state which CMS checks are unavailable.
+
+Establish whether the request is to review variants, find missing variants or
+draft a translation. Review/find mode is read-only. Creating a CMS variant
+is included only when requested; do not infer it from a missing translation.
+
+Read the source and target variants when present, plus supplied audience.md,
+voice.md, approved-facts.md and terminology.md. Establish which language is the approved
 source, the target locale and whether the task is review or revision. Do not
 assume that English is the source or that matching slugs identify equivalents.
 Use verified variant relationships, supplied mappings or available CMS tools.
 
-Compare the page promise, sections, blocks, factual qualifications, media,
+For a new translation, draft from the approved source and market guidance,
+marking unsupported local claims for review. For existing variants, compare
+the page promise, sections, blocks, factual qualifications, media,
 metadata and CTAs. Match their editorial purpose rather than demanding equal
 word counts or block order. Record missing material, changed meaning and
 intentional local differences supported by the brief.
